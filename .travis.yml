@@ -4,7 +4,7 @@
 language: java
 # jdk: oraclejdk8
 jdk: openjdk8
-install: false
+# install: false
 script: mvn clean test
 # mvn [ <life cycle> ]  [ <build phase> ]
 # script: mvn [ default | clean | site ] [ validate | compile | test | package | install | deploy ]
