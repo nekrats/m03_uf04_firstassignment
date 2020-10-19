@@ -9,27 +9,27 @@ package cat.copernic.review;
  *
  * @author pep
  */
-public abstract class BarcoDeGuerra extends Barco {
+public abstract class BarcoDeMercancias extends Barco {
 
-    private int cañones;
+    private int cargamento;
 
-    public BarcoDeGuerra(Motor motor, double eslora, double manga, int nudos, int peso, int cañones) {
+    public BarcoDeMercancias(int cargamento, Motor motor, double eslora, double manga, int nudos, int peso) {
         // llama al constructor de la superclase
         super(motor, eslora, manga, nudos, peso);
-        this.cañones = cañones;
+        this.cargamento = cargamento;
         
     }
 
     @Override
     public void arranca() {
         // ...
-        System.out.println("Arrancando barco de guerra...");
+        System.out.println("Arrancando barco de mercancias...");
     }
     
     @Override
     public void atraca() {
         // ...
-        System.out.println("Atracando barco de guerra");
+        System.out.println("Atracando barco de mercancias");
     }
 
     @Override
@@ -39,7 +39,7 @@ public abstract class BarcoDeGuerra extends Barco {
 
     @Override
     public void comportamiento() {
-        System.out.println("Se lian a cañonazos.");
+        System.out.println("Transporta la carga.");
     }
     
     
